@@ -1,0 +1,9 @@
+---
+random-route: true
+applications:
+- name: rest_mysql
+  memory: 1024M
+  instances: 1
+  path: ./target/gs-mysql-data-0.1.0.jar
+  services:
+   - mysql_db
